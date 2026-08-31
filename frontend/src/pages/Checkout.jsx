@@ -29,7 +29,7 @@ export default function Checkout() {
     const orderDetails = cartItems.map(item => `${item.name} (x${item.quantity}) - ₹${item.price * item.quantity}`).join('%0a');
     const message = `*New Order - Aarambh Pure Veg*%0a%0a*Customer Details:*%0aName: ${formData.name}%0aPhone: ${formData.phone}%0aEmail: ${formData.email}%0a%0a*Delivery Address:*%0a${formData.address}%0a%0a*Order Items:*%0a${orderDetails}%0a%0a*Payment Method:* ${formData.paymentMethod}%0a*Total Amount:* ₹${total.toFixed(2)}`;
     
-    const whatsappUrl = `https://wa.me/910000000000?text=${message}`;
+    const whatsappUrl = `https://wa.me/9185100316?text=${message}`;
     
     // Simulate API call
     setTimeout(() => {
